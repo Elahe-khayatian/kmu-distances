@@ -80,7 +80,7 @@ def get_normalized_skDistance(P_Total,DAGs,m):
       DAG_vertices=[DAG_vertices_with_labels[j][0] for j in range(num_vertices)]
       S0=nx.DiGraph()
       S0.add_nodes_from(DAG_vertices)
-      S0.add_edges_from(DAGs[i][1])
+      S0.add_edges_from(DAGs[h][1])
       s1=sum(max(S0.in_degree(v),1) for v in DAG_vertices)
       S.append(s1)
      d.append(d_k/(S[0]+S[1]))
